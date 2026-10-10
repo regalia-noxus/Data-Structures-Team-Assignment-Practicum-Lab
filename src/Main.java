@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import editor_stack.TextEditorApp;
 import mahasiswa_linked_list.MahasiswaApp;
 
 public class Main {
@@ -21,7 +22,7 @@ public class Main {
                     System.out.println("Program Queue belum diimplementasikan.");
                     break;
                 case 2:
-                    System.out.println("Program Stack belum diimplementasikan.");
+                    TextEditorApp.run(input);
                     break;
                 case 3:
                     MahasiswaApp.run(input);
