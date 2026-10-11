@@ -2,7 +2,7 @@ import java.util.Scanner;
 import benchmark_runner.BenchmarkRunner;
 import editor_stack.TextEditorApp;
 import mahasiswa_linked_list.MahasiswaApp;
-import queue.MainAntreanSystem;
+import queue.CustomerSystem;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Main {
             //Pilih kasus yang akan dijalankan.
             switch (menu) {
                 case 1:
-                    MainAntreanSystem.run();
+                    CustomerSystem.run();
                     break;
                 case 2:
                     TextEditorApp.run(input);
