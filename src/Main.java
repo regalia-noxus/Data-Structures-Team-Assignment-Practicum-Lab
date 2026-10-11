@@ -2,6 +2,7 @@ import java.util.Scanner;
 import benchmark_runner.BenchmarkRunner;
 import editor_stack.TextEditorApp;
 import mahasiswa_linked_list.MahasiswaApp;
+import queue.MainAntreanSystem;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class Main {
             //Pilih kasus yang akan dijalankan.
             switch (menu) {
                 case 1:
-                    System.out.println("Program Queue belum diimplementasikan.");
+                    MainAntreanSystem.run();
                     break;
                 case 2:
                     TextEditorApp.run(input);
