@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import benchmark_runner.BenchmarkRunner;
 import editor_stack.TextEditorApp;
 import mahasiswa_linked_list.MahasiswaApp;
 
@@ -11,6 +12,7 @@ public class Main {
             System.out.println("1. Sistem Antrean (Queue)");
             System.out.println("2. Editor Teks Undo/Redo (Stack)");
             System.out.println("3. Manajemen Mahasiswa (Linked List)");
+            System.out.println("4. Benchmark Waktu Eksekusi");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             menu = input.nextInt();
@@ -26,6 +28,9 @@ public class Main {
                     break;
                 case 3:
                     MahasiswaApp.run(input);
+                    break;
+                case 4:
+                    BenchmarkRunner.run();
                     break;
                 case 0:
                     System.out.println("Program selesai.");
