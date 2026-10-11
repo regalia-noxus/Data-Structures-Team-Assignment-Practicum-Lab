@@ -1,6 +1,6 @@
 package benchmark_runner;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 import mahasiswa_linked_list.MahasiswaNode;
@@ -55,7 +55,8 @@ public class BenchmarkRunner {
     private static void jalankanSkenario(int n, boolean tampilkanHasil) {
         
         // --- 1. PENGUJIAN QUEUE (FIFO) ---
-        Queue<Integer> queue = new ArrayDeque<Integer>();
+        // Disamakan dengan implementasi Queue pada program anggota lain.
+        Queue<Integer> queue = new LinkedList<Integer>();
 
         // fungsinya mengukur waktu Enqueue (penambahan elemen ke belakang)
         long mulai = System.nanoTime();
